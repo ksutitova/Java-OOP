@@ -1,24 +1,14 @@
 package task7_1;
 
-/**Задача №1
-        Необходимо создать класс Employee со следующими методами:
-        getBaseSalary - получить базовую ставку
-        set Base Salary
-        getName - получить имя
-        setName
-        getSalary - получить зарплату
-*/
-
 public class Employee {
 
     private double baseSalary;
     private String name;
-    private double salary;
+//    private double salary;
 
-    public Employee(double baseSalary, String name, double salary) {
+    public Employee(double baseSalary, String name) {
         this.baseSalary = baseSalary;
         this.name = name;
-        this.salary = salary;
     }
 
     public void setBaseSalary(double baseSalary) {
@@ -38,6 +28,6 @@ public class Employee {
     }
 
     public double getSalary() {
-        return salary;
+        return baseSalary;
     }
 }
