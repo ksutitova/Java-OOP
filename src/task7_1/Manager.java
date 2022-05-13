@@ -17,8 +17,6 @@ public class Manager extends Worker {
         this.numberOfSubordinates = numberOfSubordinates;
     }
 
-    //    <базовая ставка> * (<количество подчиненных> / 100 * 3).
-//    Если количество подчиненных 0, то результат как у обычного рабочего.
     public double getSalary() {
         if (getNumberOfSubordinates() == 0) {
             return getBaseSalary();
