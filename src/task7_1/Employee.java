@@ -1,5 +1,7 @@
 package task7_1;
 
+import common.IEmployee;
+
 public class Employee {
 
     private double baseSalary;
@@ -30,4 +32,5 @@ public class Employee {
     public double getSalary() {
         return baseSalary;
     }
+
 }

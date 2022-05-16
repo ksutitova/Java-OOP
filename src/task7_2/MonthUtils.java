@@ -2,7 +2,8 @@ package task7_2;
 
 public class MonthUtils {
 
-    private static Month[] MONTH_ARRAY = {new Month("January",31,23),
+    private static Month[] YEAR = {
+            new Month("January",31,23),
             new Month("February",28,20),
             new Month("March",31,23),
             new Month("April",30,22),
@@ -13,9 +14,17 @@ public class MonthUtils {
             new Month("September",30,22),
             new Month("October",31,23),
             new Month("November",30,22),
-            new Month("December",31,20)};
+            new Month("December",31,20)
+    };
 
-    public static Month[] getMonth() {
-        return MONTH_ARRAY;
+    public static Month getMonth(int index) {
+        return YEAR[index];
     }
+
+    public static int getMonthsCount(){
+        return YEAR.length;
+    }
+     public static Month[] getYEAR(){
+        return YEAR;
+     }
 }
